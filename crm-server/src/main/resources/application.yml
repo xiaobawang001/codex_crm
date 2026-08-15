@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: crm-server
+  jackson:
+    time-zone: Asia/Shanghai
+    date-format: yyyy-MM-dd HH:mm:ss
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    banner: false
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+crm:
+  jwt:
+    # 生产环境务必通过环境变量 CRM_JWT_SECRET 覆盖
+    secret: ${CRM_JWT_SECRET:codex-crm-dev-secret-please-change-in-production-0123456789}
+    expire-hours: 24
+  db-config-file: ${CRM_DB_CONFIG_FILE:../docs/db.json}

@@ -1,0 +1,13 @@
+# 后端
+crm-server/target/
+
+# 前端
+crm-web/node_modules/
+crm-web/dist/
+
+# 敏感信息
+docs/db.json
+
+# 系统
+.DS_Store
+*.log

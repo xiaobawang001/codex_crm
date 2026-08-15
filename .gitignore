@@ -11,3 +11,6 @@ docs/db.json
 # 系统
 .DS_Store
 *.log
+
+# 技能安装包缓存
+.codex/skills/*.zip

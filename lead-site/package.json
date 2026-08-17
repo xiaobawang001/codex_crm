@@ -1,0 +1,14 @@
+{
+  "name": "lead-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "云客数智获客官网 - 客户线索自动录入 CRM",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}
